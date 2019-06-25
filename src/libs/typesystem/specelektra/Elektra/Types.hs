@@ -4,7 +4,7 @@
 -- @brief Shared type definitions and utilities
 --
 -- @copyright BSD License (see LICENSE.md or https://www.libelektra.org)
--- 
+--
 {-# LANGUAGE LambdaCase #-}
 
 module Elektra.Types (SolveResult (..), RegexType (..), rightToMaybe, RegexEq (..)) where
@@ -16,7 +16,7 @@ import qualified FiniteAutomata as FA
 import GhcPlugins (TyVar)
 import TcRnTypes  (Ct)
 
-data SolveResult = Failure [Ct] | Solved [Ct] | New [Ct] [Ct]
+data SolveResult =                        Failure [Ct] | Solved [Ct] | New [Ct] [Ct]
 
 data RegexType = EmptyRegex | Regex String FA.FiniteAutomata | RegexVar TyVar | RegexIntersection RegexType RegexType
 
