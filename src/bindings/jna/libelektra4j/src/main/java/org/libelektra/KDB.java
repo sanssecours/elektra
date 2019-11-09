@@ -62,7 +62,7 @@ public class KDB implements AutoCloseable {
 	 * Will update changed keys of the given keyset in the backend. get() has to be called before this function may be
 	 * executed.
 	 *
-	 * @param ks        KeySet which contains keys to be updated in the backend
+	 * @param ks KeySet which contains keys to be updated in the backend
 	 * @param parentKey Is used to add warnings and set an error, if necessary
 	 * @throws KDBException In case of an error when storing keys
 	 */
